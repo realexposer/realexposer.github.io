@@ -290,6 +290,7 @@ defaults:
       share: true
       related: true
 
+# code clipboard button
 after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
   - assets/js/clipboardrouge.js
