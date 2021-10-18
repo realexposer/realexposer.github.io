@@ -17,7 +17,7 @@ vim temp.sh
 ```bash
 #!/bin/bash
 echo “Hello world…”
-Sleep 1
+sleep 1
 echo “How are you?”
 read ans
 echo “you typed $ans”
