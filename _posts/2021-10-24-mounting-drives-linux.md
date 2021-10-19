@@ -29,10 +29,11 @@ Firstly unmount the device
 ```bash
 sudo unmount /dev/sdb1
 ```
-Now remove the device and put back again and mount it  
+
 ```bash
 sudo ntfslabel /dev/sdb1 my_external
 ```
+Now remove the device and put back again and mount it  
 ### Unmount a busy drive
 ```bash
 sudo umount -l /PATH/OF/BUSY-DEVICE
