@@ -1,6 +1,8 @@
 main:
   - title: "Realexposer"
     url: "https://realexposer.com"
+  - title: "Cooking"
+    url: "https://healthyfreshcook.com"
   - title: "Posts"
     url: /posts/
   - title: "Categories"
