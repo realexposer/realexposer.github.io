@@ -3,10 +3,10 @@ main:
     url: "https://realexposer.com"
   - title: "Cooking"
     url: "https://healthyfreshcook.com"
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
+  #- title: "Posts"
+  #  url: /posts/
+  #- title: "Categories"
+  #  url: /categories/
   - title: "Tags"
     url: /tags/
   - title: "About"
