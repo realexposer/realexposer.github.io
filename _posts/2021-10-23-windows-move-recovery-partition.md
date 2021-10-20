@@ -1,5 +1,5 @@
 ---
-title: "Windows: How to Move Recovery Partioion on Windows 10"
+title: "Windows: How to Move Recovery Partition on Windows 10"
 date: 2021-10-23T15:34:30-04:00
 categories:
   - blog
