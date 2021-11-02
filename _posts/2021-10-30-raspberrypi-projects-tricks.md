@@ -4,7 +4,8 @@ date: 2021-10-30T15:34:30-04:00
 categories:
   - blog
 tags:
-  - 
+  - raspberrypi
+  - linux
 ---
 
 ## Useful projects links:
@@ -17,6 +18,7 @@ tags:
 - MotionEyeOS 
 - RasPlex
 - DietPi
+- [Moodeaudio](https://moodeaudio.org/)
 
 ## Media Center:
 - [Xbian](http://www.xbian.org/what-is-xbian/) is a small, fast and lightweight media center distribution.
