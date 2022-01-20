@@ -244,3 +244,22 @@ sudo apt install ghostscript
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed_PDF_file.pdf input_PDF_file.pdf
 # some example dPDSETTINS: /prepress /printer /ebook /screen
 ```
+
+### Ubuntu .deb package installation/uninstallation
+```bash
+#installing
+sudo dpkg -i package_file.deb
+
+#uninstalling
+#list the packages installed with name urserver
+sudo dpkg -l '*urserver*'
+
+#remove the package itself (without the configuration files
+sudo dpkg -r urserver
+
+#delete (purge) the package completely (with configuration files)
+sudo dpkg -P urserver
+
+#check if the package has been removed successfully
+sudo dpkg -l urserver
+```
