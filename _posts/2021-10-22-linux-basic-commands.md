@@ -245,22 +245,26 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE 
 # some example dPDSETTINS: /prepress /printer /ebook /screen
 ```
 
-### Ubuntu .deb package installation/uninstallation
+## Ubuntu .deb package installation/uninstallation
+
+### installing
 ```bash
-#installing
 sudo dpkg -i package_file.deb
-
-#uninstalling
-#list the packages installed with name urserver
+```
+### list the packages installed with name urserver
+```bash
 sudo dpkg -l '*urserver*'
-
-#remove the package itself (without the configuration files
+```
+### remove the package itself (without the configuration files
+```bash
 sudo dpkg -r urserver
-
-#delete (purge) the package completely (with configuration files)
+```
+### delete (purge) the package completely (with configuration files)
+```bash
 sudo dpkg -P urserver
-
-#check if the package has been removed successfully
+```
+### check if the package has been removed successfully
+```bash
 sudo dpkg -l urserver
 ```
 
@@ -271,6 +275,10 @@ cat /sys/devices/cpu/caps/pmu_name
 
 ## Debug in bash
 ### Enable
-``set -x``
+```bash
+set -x
+```
 ### Dissable
-``set +x``
+```bash
+set +x
+```
