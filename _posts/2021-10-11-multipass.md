@@ -41,6 +41,10 @@ multipass delete name-of-the-instance
 # completely get rid of the instance 
 multipass purge
 
+# multipass service restart (macOS)
+sudo launchctl stop com.canonical.multipassd
+sudo launchctl start com.canonical.multipassd
+
 ##########################################################
              OTHER USEFUL PARAMETERS
 ##########################################################

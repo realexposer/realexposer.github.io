@@ -263,3 +263,8 @@ sudo dpkg -P urserver
 #check if the package has been removed successfully
 sudo dpkg -l urserver
 ```
+
+### Check CPU microarchitecture
+```bash
+cat /sys/devices/cpu/caps/pmu_name
+```
