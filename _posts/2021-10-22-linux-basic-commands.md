@@ -268,3 +268,9 @@ sudo dpkg -l urserver
 ```bash
 cat /sys/devices/cpu/caps/pmu_name
 ```
+
+## Debug in bash
+### Enable
+``set -x``
+### Dissable
+``set +x``
