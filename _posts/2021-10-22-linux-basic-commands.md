@@ -148,9 +148,14 @@ ffmpeg -i 01.mp3 -f segment -segment_time 100 -c copy 01_%03d.mp3
 ```bash
 cat *.mp3 > out.mp3
 ```
+## rsync
 ### Copy/Sync a Directory on Local Computer
 ```bash
-rsync -avzh /root/rpmpkgs /tmp/backups/
+rsync -avzh /root/rpmpkgs/folder/ /tmp/backups/folder/ --delete
+```
+### Syncing files using rsync across network
+```bash
+rsync -av -e "ssh -T -o Compression=no -x" user@10.1.1.1:/source/path/ /destination/path/
 ```
 ### chmod
 ```bash
@@ -204,12 +209,6 @@ ls /proc/processID/task/ | wc -l
 ```bash
 sudo dpkg-reconfigure tzdata
 ```
-### Syncing files using rsync
-```bash
-rsync -aqv -e "ssh -T -o Compression=no -x" user@10.1.1.1:/source/path/* /destination/path/
-rsync -aqvzh source/path destination/path --delete
-```
-
 ### Importing ssh key from github
 ```bash
 ssh-import-id-gh user_id
