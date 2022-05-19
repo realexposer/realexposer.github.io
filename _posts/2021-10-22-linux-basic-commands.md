@@ -255,4 +255,14 @@ sudo dpkg -l urserver
 cat /sys/devices/cpu/caps/pmu_name
 ```
 
+## OS Details
+### OS release - works with atest ubuntu
+```bash
+cat /etc/os-release
+```
+### another way to check os details
+```bash
+lsb_release -a
+```
+
 
