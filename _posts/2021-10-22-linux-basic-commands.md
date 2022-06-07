@@ -179,7 +179,7 @@ chmod 700 myDir #7-user; 0:Group; 0: Others - read(4), write(2), execute(1)
 #0 none --- 000
 ```
 | No | Permission | rwx | Binary |
-|---|---|---|---|
+|------|------|------|------|
 | 7 | read, write and execute | rwx | 111 |
 | 6 | read and write | rw- | 110 |
 | 5 | read and execute | r-x | 101 |
