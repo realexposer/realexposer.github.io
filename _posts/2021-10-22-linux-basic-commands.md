@@ -13,6 +13,8 @@ Linux is a family of open-source free operating systems built using the Linux ke
 ### Identifying the IP address
 ```bash
 ip addr show
+```
+```bash
 ifconfig
 ```
 ### Installing OpenVPN client and import *.ovpn (Windows) file to configure
