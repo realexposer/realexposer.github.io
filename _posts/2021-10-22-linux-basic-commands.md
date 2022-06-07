@@ -20,12 +20,12 @@ ifconfig
 ### Installing OpenVPN client and import *.ovpn (Windows) file to configure
 ```bash
 sudo apt-get install openvpn
-sudo apt-get install network-manager-openvpn-gnome
-# Now goto the network settings on the system tray -> “vpn connections” -> “configure vpn” ->
-# “Add” -> select “Import saved VPN configuration” from the drop down list - > “create” ->
-# select the *.ovpn file -> finally, type the username and password and click “ok”.
-# Now go to the network settings and connect to the configured VPN server.
 ```
+```bash
+sudo apt-get install network-manager-openvpn-gnome
+```
+Now goto the network settings on the system tray -> “vpn connections” -> “configure vpn” -> “Add” -> select “Import saved VPN configuration” from the drop down list - > “create” -> select the *.ovpn file -> finally, type the username and password and click “ok”. Now go to the network settings and connect to the configured VPN server.
+
 
 ## User management
 ### Changing the default password
@@ -43,7 +43,8 @@ id -g user_name
 ### Find all the groups a user belongs to
 ```bash
 id -G user_name
-groups
+```
+```bash
 groups username
 ```
 ### Find all the groups associated with UID
@@ -51,10 +52,12 @@ groups username
 id user_name
 ```
 ### Disable sudo password for a particular user
+create a file in /etc/sudoers.d for example
 ```bash
-#create a file in /etc/sudoers.d for example
 sudo vim /etc/sudoers.d/dont_prompt_user
-#add the following to the above file
+```
+add the following to the above file
+```bash
 user_name ALL=(ALL) NOPASSWD:ALL
 ```
 
@@ -81,12 +84,14 @@ df -h # -h: human readable output format
 ### Check the capacity of a directory
 ```bash
 du -sh /path/directory
-# h: human readable output; s: total disk space used by the directory
 ```
+h: human readable output; s: total disk space used by the directory
 ### scp copy
 ```bash
-scp /path/to/file username@a:/path/to/destination
-scp username@b:/path/to/file /path/to/destination
+scp -r /path/to/file username@a:/path/to/destination
+```
+```bash
+scp -r username@b:/path/to/file /path/to/destination
 ### Executing a command at a fixed interval using watch command
 watch -n x command
 # "x" is the repeat time in seconds;"command" is the command that you want to execute
@@ -98,7 +103,8 @@ while true; do
 cmd >> output.txt
 sleep 2
 done
-
+```
+```bash
 while true; do sleep 2; cmd >>output.txt; done &
 ```
 ### Running a command in background
