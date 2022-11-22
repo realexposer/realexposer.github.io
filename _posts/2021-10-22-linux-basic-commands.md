@@ -97,6 +97,10 @@ watch -n x command
 # "x" is the repeat time in seconds;"command" is the command that you want to execute
 ```
 ## System
+### Users connected to the system
+```bash
+who
+```
 ### Running a command at a fixed interval
 ```bash
 while true; do
@@ -164,6 +168,9 @@ rsync -avzh /root/rpmpkgs/folder/ /tmp/backups/folder/ --delete
 ### Syncing files using rsync across network
 ```bash
 rsync -av -e "ssh -T -o Compression=no -x" user@10.1.1.1:/source/path/ /destination/path/
+```
+```bash
+rsync -avzhe "ssh -i ~/.ssh/id_rsa" user@10.1.1.1:/source/path/ /destination/path/
 ```
 ### chmod
 ```bash
@@ -282,5 +289,8 @@ cat /etc/os-release
 ```bash
 lsb_release -a
 ```
-
+## Find command
+```bash
+sudo find / -name "name_of_the_file"
+```
 
