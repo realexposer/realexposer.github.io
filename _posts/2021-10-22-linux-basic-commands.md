@@ -294,3 +294,6 @@ lsb_release -a
 sudo find / -name "name_of_the_file"
 ```
 
+## add a user to sudo
+usermod -aG sudo username
+
